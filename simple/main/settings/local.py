@@ -1,0 +1,1 @@
+/usr/lib/pylama_com/configuration/settings.py

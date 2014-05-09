@@ -1,0 +1,2 @@
+# Swith to stable when 1.7 has been released
+-e git+https://github.com/django/django#egg=Django
