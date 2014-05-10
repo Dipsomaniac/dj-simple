@@ -1,11 +1,14 @@
-""" Vagrant settings. """
+""" Production settings. """
 
-from .develop import *
+from .core import *
 
 
-ENVIRONMENT_NAME = 'vagrant'
+ENVIRONMENT_NAME = 'production'
+
+SECRET_KEY = 'DontForgetToReplaceMe'
 
 CACHES['KEY_PREFIX'] = '_'.join((PROJECT_NAME, ENVIRONMENT_NAME))
+
 
 logging.info("Production settings are loaded.")
 
