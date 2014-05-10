@@ -1,5 +1,8 @@
-from django.http import HttpResponse
+""" Base views. """
+
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("Hello world!!!")
+    """ Render simple page. """
+    return render(request, 'base.html')
