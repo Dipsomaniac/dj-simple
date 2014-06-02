@@ -2,10 +2,9 @@
 import os.path
 import sys
 
-from main.wsgi import application
-
-
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'simple'))
+
+from main.wsgi import application
 
 
 from django.conf import settings
